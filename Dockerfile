@@ -7,8 +7,7 @@ RUN apk update && \
         build-base
 
 RUN mkdir /cron
-COPY cron/crontab cron/start.sh /cron/
-COPY cron/backup /usr/bin
+COPY crontab cron/start.sh /cron/
 
 WORKDIR /cron
 
