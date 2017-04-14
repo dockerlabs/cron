@@ -5,7 +5,7 @@
 
 ### Quickstart
 
-Start Cron and mounting crontab file:
+Start Cron and setup a crontab file:
 
 ```sh
 sudo docker run --name mycron -itd --restart always \
