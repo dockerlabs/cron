@@ -6,7 +6,7 @@ install:
   - git clone https://github.com/docker-library/official-images.git ~/official-images
 
 script:
-  - docker build -t "cron:build" .
+  - travis_retry docker build -t "cron:build" .
   - ~/official-images/test/run.sh "cron:build"
 
 after_script:
